@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={myFont.className}
                 suppressHydrationWarning={true}>
-                {/* <Header /> */}
+                <Header />
                 <main>
                     {children}
                 </main>
