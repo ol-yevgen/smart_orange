@@ -1,0 +1,23 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
+
+.nav__list {
+    @include flex-container-space-between;
+    width: 80%;
+}
+
+.nav__link {
+    padding: 3px 0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+
+    @include transition-4s;
+
+    &:hover {
+        border-color: #000;
+    }
+}
+
+.active__nav {
+    border-color: #000;
+}

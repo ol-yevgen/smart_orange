@@ -1,0 +1,33 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
+
+.main__menu {
+    width: 60%;
+}
+
+.mobile__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include flex-container-center;
+    align-items: flex-end;
+    flex-direction: column;
+
+    min-width: 100%;
+    height: calc(100vh - 80px);
+
+    margin-top: 80px;
+    padding: 30px;
+
+    background: $mainBackgroundColor;
+
+    overflow-x: hidden;
+    text-align: right;
+
+    & > ul > li {
+        font-size: 36px;
+        margin-bottom: 70px;
+        
+    }
+}

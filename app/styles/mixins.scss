@@ -1,0 +1,39 @@
+@mixin max-width-1210px {
+    max-width: 1210px;
+    margin: 0 auto;
+}
+
+@mixin flex-container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-container-align-start {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-container-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin transition-4s {
+    transition: all .4s ease-out;
+}
+
+@mixin transition-3s {
+    transition: all .3s ease-out;
+}
+
+@mixin backgroundImage-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin transition-3s {
+    transition: all .3s ease-out;
+}
