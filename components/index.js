@@ -4,32 +4,27 @@ import { Navigation } from "./Layout/Navigation/Navigation";
 import { Menu } from "./Layout/Menu/Menu";
 import Footer from "./Layout/Footer/Footer";
 
-// Sections
-
-
 // Home Section
-
+import HomeHero from "@/components/Sections/Home/Hero/HomeHero"
+import HomeAbout from "@/components/Sections/Home/About/HomeAbout"
+import HomeTask from "@/components/Sections/Home/Task/HomeTask"
+import HomeProjects from "@/components/Sections/Home/Projects/HomeProjects"
+import HomeContacts from "@/components/Sections/Home/Contacts/HomeContacts"
 
 //Component
-
+import { PaginationSlider } from "./component/PaginationSlider/PaginationSlider";
+import { MobilePaginationSlider } from "./component/MobilePaginationSlider/MobilePaginationSlider";
 
 //Form
-// import { ConsultationForm } from "./component/ConsultationForm";
-// import { FullForm } from "./component/FullForm";
+import { FullForm } from "./component/Form/FullForm";
 
 // UI elements
-// import { Button } from "./UI/Button";
-// import { PlayButton } from "./UI/PlayButton";
-// import { Selector } from "./UI/Selector";
-// import SectionTitle from './UI/SectionTitle';
-// import SectionText from './UI/SectionText';
-// import { Slider } from "./component/Slider";
-// import { LoadMore } from "./UI/LoadMore";
-// import { SocialLink } from "./UI/SocialLink";
+import Button from "./UI/Button/Button";
 import Burger from "./UI/Burger/Burger";
-// import { FollowLink } from "./UI/FollowLink";
-// import { SliderArrows } from "./UI/SliderArrow";
-// import { ServicesGalleryFilters } from "./UI/ServicesGalleryFilters";
+import { SliderArrows } from "./UI/SliderArrows/SliderArrows";
+import Title from "./UI/Title/Title";
+import { Input } from './UI/Input/Input'
+import { TextArea } from './UI/TextArea/TextArea'
 
 export {
     //Layout
@@ -37,21 +32,27 @@ export {
     Navigation,
     Menu,
     Footer,
-
-    //Section
-
+    
     //Home
-
-
+    HomeHero,
+    HomeAbout,
+    HomeTask,
+    HomeProjects,
+    HomeContacts,
     
     //Components
-
+    PaginationSlider,
+    MobilePaginationSlider,
 
     //Form
-    // ConsultationForm,
-    // FullForm,
+    FullForm,
 
     //UI
     Burger,
+    SliderArrows,
+    Button,
+    Title,
+    Input,
+    TextArea
 
 }

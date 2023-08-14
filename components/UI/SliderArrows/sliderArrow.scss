@@ -1,0 +1,49 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
+
+.arrows {
+   @include flex-container-space-between;
+    width: 130px;
+
+    margin: 90px 0;
+
+    &__mobile {
+        margin: 0;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.arrow {
+    width: 53px;
+    height: 53px;
+
+    border: 1px solid $borderColor;
+
+    background: transparent;
+
+    @include transition-3s;
+
+    &__left {
+        left: 0;
+    }
+
+    &__right {
+        right: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background: $borderColor;
+    }
+
+    &:disabled {
+        background: transparent;
+    }
+
+}
+
+

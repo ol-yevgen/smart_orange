@@ -1,0 +1,37 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
+
+.form {
+    position: absolute;
+    z-index: 2;
+
+    width: 391px;
+    max-width: 391px;
+    min-height: 442px;
+
+    background: $mainBackgroundColor;
+
+    &__contacts {
+        position: relative;
+    }
+
+    &__required-star {
+        margin-left: 5px;
+        color: $formErrorColor;
+    }
+
+    &-text {
+        margin: 22px 0;
+        padding: 0 25px;
+
+        font-size: 14px;
+        letter-spacing: 0.42px;
+    }
+}
+
+@media (max-width: 900px) {
+    .form {
+        width: 100%;
+        max-width: 100%;
+    }
+}

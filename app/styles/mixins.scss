@@ -20,6 +20,12 @@
     align-items: center;
 }
 
+@mixin flex-container-space-around {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin transition-4s {
     transition: all .4s ease-out;
 }

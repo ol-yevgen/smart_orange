@@ -1,0 +1,50 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
+
+.mobile__slider {
+    position: relative;
+    width: 100%;
+}
+
+.swiper-pagination {
+   @include flex-container-space-around;
+    bottom: 3%;
+    left: 0;
+
+    width: 142px;
+
+    font-family: "TT Hoves", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+
+    color: $titleColor;
+}
+
+.mySwiper__mobile {
+
+    &-slide {
+        width: 100%;
+        padding-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    &-image {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 507px) {
+    .swiper-pagination {
+        bottom: 4%;
+
+        width: 70px;
+        font-size: 18px;
+        line-height: 18px;
+
+    }
+}

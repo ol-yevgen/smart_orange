@@ -1,0 +1,134 @@
+@import "@/app/styles/variables.scss";
+@import "@/app/styles/mixins.scss";
+
+.btn {
+    position: absolute;
+
+    width: 222px;
+    height: 71px;
+
+    border: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include transition-4s;
+
+    & > a {
+        @include flex-container-center;
+        gap: 10px;
+    }
+
+    & > span {
+            @include flex-container-center;
+    gap: 10px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover.btn-black {
+        color: $mainBackgroundColor;
+    }
+
+    &:disabled {
+        color: #a6a6a6;
+        background: #484848;
+    }
+
+    &:disabled.btn-black > span > svg > g > path {
+        fill: #a6a6a6;
+    }
+}
+
+.btn__position-left {
+    left: 40%;
+    bottom: 0;
+}
+
+.btn__mobile-left {
+    left: 0;
+    bottom: 40px;
+}
+
+.btn__position-relative {
+    position: relative;
+}
+
+.btn-white {
+    color: $mainColor;
+    background: $mainBackgroundColor;
+}
+
+.btn-black {
+    color: $mainBackgroundColor;
+    background: $mainColor;
+
+    & > a > svg > g > path {
+        fill: $mainBackgroundColor;
+    }
+
+    & > span > svg > g > path {
+        fill: $mainBackgroundColor;
+    }
+
+    &:hover {
+        color: $mainBackgroundColor;
+    }
+}
+
+#btn {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#btn a {
+    position: relative;
+    transition: all 0.45s ease-Out;
+}
+
+#btn .btn-text {
+    position: relative;
+    transition: all 0.45s ease-Out;
+}
+
+#light {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: $borderColor;
+    position: absolute;
+    transition: all 0.5s ease-Out;
+    top: 20px;
+    left: 70px;
+}
+
+#dark {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #494949;
+    position: absolute;
+    transition: all 0.5s ease-Out;
+    top: 20px;
+    left: 70px;
+}
+
+#btn:hover #light {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+}
+
+#btn:hover #dark {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+}
