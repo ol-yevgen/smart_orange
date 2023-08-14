@@ -8,9 +8,9 @@ export default async function HomeHero() {
 
     return (
         <section className='hero'>
-            {/* <PaginationSlider
+            <PaginationSlider
                 data={homeSliderListData}
-            /> */}
+            />
         </section>
     )
 }
