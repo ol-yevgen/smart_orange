@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { getData } from '@/utils/getData'
 import { Title, Button } from '@/components/index'
 import './homeProjects.scss';
-import { arrowRightWhite } from '@/public/icons/arrows';
+import { arrowRight} from '@/public/icons/arrows';
 
 export default async function HomeProjects() {
     const homeProjectsData = await getData(`${process.env.NEXT_PUBLIC_BASIC_API}projectsGallery`)
@@ -30,7 +30,7 @@ export default async function HomeProjects() {
                                     />
                                     <div className="project__content">
                                         <h4 className="project__content-title">{project.title}</h4>
-                                        <span className="project__content-more">подробнее {arrowRightWhite}</span>
+                                        <span className="project__content-more">подробнее {arrowRight}</span>
                                     </div>
                                 </Link>
                             </li>

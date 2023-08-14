@@ -16,7 +16,7 @@ import { PaginationSlider } from "./component/PaginationSlider/PaginationSlider"
 import { MobilePaginationSlider } from "./component/MobilePaginationSlider/MobilePaginationSlider";
 
 //Form
-import { FullForm } from "./component/Form/FullForm";
+import FullForm from "./component/Form/FullForm";
 
 // UI elements
 import Button from "./UI/Button/Button";

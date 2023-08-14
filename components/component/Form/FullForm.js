@@ -1,5 +1,8 @@
 'use client'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -38,7 +41,7 @@ const fullSchema = yup.object().shape({
         .max(500, 'Maximum 60 characters'),
 })
 
-export const FullForm = () => {
+export default function FullForm () {
 
     const [form, setForm] = useState([])
 
@@ -69,6 +72,7 @@ export const FullForm = () => {
 
     const formSubmit = () => {
         setForm(getValues())
+        toast("Your message has been send!")
         reset();
     }
 
@@ -126,6 +130,19 @@ export const FullForm = () => {
                 required={true}
             />
 
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
+
             <div className='submit__first submit__first-contacts'>
                 <p className='form-text'>
                     Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
@@ -147,6 +164,7 @@ export const FullForm = () => {
                 </button>
 
             </div>
+            
         </form>
     )
 }
