@@ -20,7 +20,7 @@ export default async function HomeProjects() {
                                 key={project.id}
                                 className='project__item'
                             >
-                                <Link href='/'>
+                                <Link href='/otherPage'>
                                     <Image
                                         src={project.path}
                                         width={project.width}
@@ -45,7 +45,7 @@ export default async function HomeProjects() {
                     color='btn-black'
                     position='btn__position-relative'
                     circleColor='dark'
-                    link='/'
+                    link='/otherPage'
                 />
             </div>
         </section>

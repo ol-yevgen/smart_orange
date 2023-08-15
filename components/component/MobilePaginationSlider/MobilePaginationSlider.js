@@ -1,5 +1,5 @@
 'use client'
-import { useResize } from "@/utils/useResize";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { SliderArrows, Button } from "@/components/index";
 import Image from 'next/image';
@@ -13,7 +13,6 @@ import './mobilePaginationSlider.scss';
 import { Pagination, Navigation } from 'swiper/modules';
 
 export const MobilePaginationSlider = ({ data }) => {
-    const windowWidth = useResize()
 
     return (
         <>
@@ -49,7 +48,7 @@ export const MobilePaginationSlider = ({ data }) => {
                                         color='btn-white'
                                         position='btn__mobile-left'
                                         circleColor='light'
-                                        link='/'
+                                        link='/otherPage'
                                     />
                                 </SwiperSlide>
                             )

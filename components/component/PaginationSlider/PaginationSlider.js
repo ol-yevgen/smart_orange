@@ -47,7 +47,7 @@ export const PaginationSlider = ({ data }) => {
                                         color='btn-white'
                                         position='btn__position-left'
                                         circleColor='light'
-                                        link='/'
+                                        link='/otherPage'
                                     />
                                 </SwiperSlide>
                             )

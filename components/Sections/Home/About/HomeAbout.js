@@ -45,7 +45,7 @@ export default async function HomeAbout() {
                     color='btn-white'
                     position='btn__position-relative'
                     circleColor='light'
-                    link='/'
+                    link='/otherPage'
                 />
             </div>
         </section>
